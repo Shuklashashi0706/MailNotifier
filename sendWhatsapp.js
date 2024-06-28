@@ -14,7 +14,7 @@ const sendWhatsAppNotification = function (subject, text) {
     .create({
       from: "whatsapp:+14155238886", // Twilio sandbox number for WhatsApp
       to: `whatsapp:+${process.env.PHONE_NUM}`,
-      body: `MSRIT: ${subject}\n\n${text}`,
+      body: `Bhai apna mail check kr!!`,
     })
     .then((message) => console.log("WhatsApp message sent:", message.sid))
     .catch((err) => console.error(err));
